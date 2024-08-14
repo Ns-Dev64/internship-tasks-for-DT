@@ -3,5 +3,6 @@
 ## Nodejs REST api's creation
 
 ### POST request:
-    <img src="https://github.com/user-attachments/assets/2a3f28ce-a828-44b8-b268-4cf6d82967e2" alt="Post screenshot" width=300 />
+    ![Screenshot 2024-08-14 195631](https://github.com/user-attachments/assets/87120e21-e686-42b7-8a29-28825dedf098)
+
 
