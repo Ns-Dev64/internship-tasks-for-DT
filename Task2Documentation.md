@@ -34,10 +34,28 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
 {
     "id": "string",
     "title": "string",
-    "image_url": "string" or file,
+    "image": "url (string) or file",
     "scheduled_date": "string (YYYY-MM-DD)",
     "timings": "string (HH:MM to HH:MM)",
     "description": "string",
     "invitation_icon": "string"
 }
 ```
+
+## Endpoints
+
+### Create a Nudge
+- **Endpoint**: `/nudges`
+- **Method**: `POST`
+- **Request Body**:
+  ```json
+  {
+      "title": "string (required, max 60 characters)",
+      "image_url": "string (optional)",
+      "scheduled_date": "string (required, format: dd/mm/yyyy)",
+      "timings": "string (required, format: hh:mm to hh:mm)",
+      "description": "string (optional)",
+      "invitation_icon": "string (optional)"
+  }
+  ```
+ 
