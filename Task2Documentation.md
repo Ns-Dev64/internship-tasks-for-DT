@@ -13,10 +13,9 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
   - [Update a Nudge](#update-a-nudge)
   - [Delete a Nudge](#delete-a-nudge)
 - [Error Handling](#error-handling)
-- [Examples](#examples)
 - [Conclusion](#conclusion)
 
-## API Overview
+## 1.API Overview
 | HTTP Method | Endpoint         | Description                                |
 |-------------|------------------|--------------------------------------------|
 | POST        | /nudges          | Create a new nudge                         |
@@ -25,7 +24,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
 | PUT         | /nudges/{id}     | Update a specific nudge by ID              |
 | DELETE      | /nudges/{id}     | Delete a specific nudge by ID              |
 
-## Data Model
+## 2.Data Model
 **Nudge Object Model**:
 ```json
 {
@@ -39,9 +38,9 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
 }
 ```
 
-## Endpoints
+## 3.Endpoints
 
-### Create a Nudge
+### 3.1 Create a Nudge
 - **Endpoint**: `/nudges`
 - **Method**: `POST`
 - **Request Body**:
@@ -75,7 +74,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
     "error": "Invalid input data"
 }
 
-### Retrieve a Specific Nudge
+### 3.2 Retrieve a Specific Nudge
 - **Endpoint**: `/nudges/{id}`
 - **Method** :`GET`
 
@@ -99,7 +98,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
     "error": "Nudge not found"
 }
 
-### Retrieve All Nudges
+### 3.3 Retrieve All Nudges
 - **Endpoint**: `/nudges`
 - **Method**: `GET`
   
@@ -120,7 +119,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
 
 ]
 
-### Update a Nudge
+### 3.4Update a Nudge
 - **Endpoint**: `/nudges/{id}`
 - **Method**: `PUT`
 - **Request Body**:
@@ -160,7 +159,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
     "error": "Nudge not found"
 }
 
-### Delete a Nudge
+### 3.5 Delete a Nudge
 - **Endpoint**: `/nudges/{id}`
 - **Method**: `DELETE`
 
@@ -174,7 +173,7 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
     "error": "Nudge not found"
 }
 
-## Error Handling
+## 4.Error Handling
 | Error Code | Description                    |
 |------------|--------------------------------|
 | 400        | Bad Request - Invalid input    |
@@ -182,6 +181,6 @@ The Nudge Creation API allows users to create, read, update, and delete nudges f
 | 404        | Not Found - Resource not found |
 | 500        | Internal Server Error          |
 
-## Conclusion
+## 5.Conclusion
 The Nudge Creation API provides a simple and efficient way for users to create and manage event nudges. It supports essential CRUD operations and offers flexibility through optional fields, allowing users to customize their nudges as needed.
 
