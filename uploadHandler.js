@@ -20,7 +20,6 @@ const upload = multer({
     checkFileType(file, cb);
   },
 }).fields([
-  { name: "Proof", maxCount: 1 },
   { name: "Photo", maxCount: 1 },
 ]);
 function checkFileType(file, cb) {
